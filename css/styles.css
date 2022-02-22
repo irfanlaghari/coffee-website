@@ -360,6 +360,9 @@ button {
   gap: 2.5rem;
   margin-bottom: 3.5rem;
 }
+span.products__stock {
+  display: block;
+}
 
 .products__line {
   position: relative;
@@ -1000,11 +1003,68 @@ button {
     flex-direction: row;
     justify-content: space-between;
   }
+  .footer__title {
+    font-size: var(--h2-font-size);
+  }
+
+  .footer__social {
+    column-gap: 2rem;
+  }
+  .footer__social-link {
+    font-size: 1.5rem;
+  }
+  .scrollup {
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home__container {
+    padding-top: 10rem;
+  }
+  .home__data {
+    padding-top: 3rem;
+  }
+
+  .home__title {
+    margin-bottom: 2rem;
+  }
+  .home__description {
+    margin-bottom: 3rem;
+  }
+
+  .home__scroll {
+    width: 130px;
+  }
 }
 
 /* Alternative code, for larger screens */
 
+@media screen and (min-width: 1700px) {
+  .home {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*=============== LOAD ===============*/
+
+.load {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 99%);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.load__gif {
+  width: 300px;
+}
 
 /* The size may vary depending 
 on the image of the gif */

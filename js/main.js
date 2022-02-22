@@ -101,3 +101,9 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+const load = document.getElementById("load");
+
+setTimeout(() => {
+  load.style.display = "none";
+}, 2500);
